@@ -130,10 +130,7 @@ const ExpandableComponent = ({item, selectedItem, onClickFunction}) => {
 
 const Home = () => {
   const [selectedItem, setSelectedItem] = useState(null);
-  const [pressed, setPressed] = useState(false);
-  const [expanded, setExpanded] = useState(true);
   const [listDataSource, setListDataSource] = useState(Records);
-  //   const handlePress = () => setExpanded(!expanded);
   const nav = useNavigation();
   const [showMenu, setShowMenu] = useState(false);
   const offsetValue = useRef(new Animated.Value(0)).current;
@@ -150,7 +147,7 @@ const Home = () => {
     array[index]['isExpanded'] = !array[index]['isExpanded'];
     setListDataSource(array);
   };
-  console.log('sdghsgfhsg :', Records);
+ 
   return (
     <SafeAreaView style={styles.Container}>
       <View
@@ -373,39 +370,3 @@ const styles = StyleSheet.create({
 
 export default Home;
 
-{
-  /* 
-
-    <FlatList 
-          data={Records}
-          renderItem={({item}) => (
-            <View style={{justifyContent: 'space-between'}}>
-              <Text style={styles.text}>{item.CompanyName} </Text>
-              <Text style={styles.text}>
-                {item.FromDate} - {item.ToDate}
-              </Text>
-              <TouchableOpacity onPress={() => setPressed(!pressed)}>
-                <Icon
-                  name="caretdown"
-                  size={18}
-                  color="white"
-                  style={styles.iconStyle}
-                />
-              </TouchableOpacity>
-              {pressed && (
-                <View style={styles.subDropDownStyle}>
-                  {Records.map(record => {
-                    return (
-                      <Text
-                        key={record.id}
-                        style={{color: 'black', fontSize: 20, marginStart: 10}}>
-                        {record.Title}
-                      </Text>
-                    );
-                  })}
-                </View>
-              )}
-            </View>
-          )}
-        /> */
-}

@@ -16,17 +16,12 @@ import {
 
 const SideBar = () => {
   return (
-    // <NavigationContainer>
-    //     <Drawer.Navigator>
-    //   <Drawer.Screen key='ViewTimesheets' name='ViewTimesheets' component={ViewTimesheets} />
+    <NavigationContainer>
+        <Drawer.Navigator>
+      <Drawer.Screen key='ViewTimesheets' name='ViewTimesheets' component={ViewTimesheets} />
       
-    // </Drawer.Navigator>
-    // </NavigationContainer>
-
-    <View>
-      <Text style={styles.text}>View TimeSheet</Text>     
-    <Text style={styles.text}>Home</Text>
-    </View>
+    </Drawer.Navigator>
+    </NavigationContainer>
   );
 };
 
