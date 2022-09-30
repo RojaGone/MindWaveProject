@@ -1,0 +1,79 @@
+[
+    {
+        "id":1,
+        "Title": "abc",
+        "CompanyName": "HCL1",
+        "FromDate": "05-29-2021",
+        "ToDate": "06-04-2021",
+        "isExpanded": false,
+        "Status": "Submitted",
+        "bgColor": "gray",
+        "subCategory": [
+            {
+                "id": "1", 
+                "SubmittedDate": "06-01-2021",
+                "RegularHours": "43:00",
+                "TotalHours": "43:00",
+                "EmployeeRemarks": ""
+            }
+        ]
+    },
+    {
+        "id":2,
+        "Title": "abc2",
+        "CompanyName": "HCL2",
+        "FromDate": "05-29-2021",
+        "ToDate": "06-04-2021",
+        "isExpanded": false,
+        "Status": "Rejected",
+        "bgColor": "red",
+        "subCategory": [
+            {
+                "id": "1", 
+                "SubmittedDate": "06-01-2021",
+                "RegularHours": "43:00",
+                "TotalHours": "43:00",
+                "EmployeeRemarks": ""
+            }
+        ]
+    },
+    {
+        "id":3,
+        "Title": "abc3",
+        "CompanyName": "HCL3",
+        "FromDate": "05-29-2021",
+        "ToDate": "06-04-2021",
+        "isExpanded": false,
+        "Status": "Approved",
+        "bgColor": "green",
+        "subCategory": [
+            {
+                "id": "1", 
+                "SubmittedDate": "06-01-2021",
+                "RegularHours": "43:00",
+                "TotalHours": "43:00",
+                "EmployeeRemarks": ""
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "Title": "abc4",
+        "CompanyName": "HCL4",
+        "FromDate": "05-29-2021",
+        "ToDate": "06-04-2021",
+        "isExpanded": false,
+        "Status": "Rejected",
+        "bgColor": "red",
+        "subCategory": [
+            {
+                "id": "1", 
+                "SubmittedDate": "06-01-2021",
+                "RegularHours": "43:00",
+                "TotalHours": "43:00",
+                "EmployeeRemarks": ""
+            }
+          
+        ]
+    }
+]
